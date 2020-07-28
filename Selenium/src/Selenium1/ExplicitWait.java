@@ -16,7 +16,6 @@ public class ExplicitWait {
 		driver.manage().window().maximize();
 		driver.get("https://demos.devexpress.com/aspxeditorsdemos/ListEditors/MultiSelect.aspx");
 		driver.findElement(By.xpath("//*[@id='ContentHolder_lbFeatures_TG_D']")).click();
-		Thread.sleep(10000);
 		WebDriverWait wait=new WebDriverWait(driver, 50);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='ContentHolder_lbModels_11_D']")));
 		WebElement e1=	driver.findElement(By.xpath("//*[@id='ContentHolder_lbModels_11_D']"));
